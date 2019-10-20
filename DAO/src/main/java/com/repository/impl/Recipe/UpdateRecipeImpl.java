@@ -20,7 +20,7 @@ public class UpdateRecipeImpl implements RepositoryUpdateRecipe {
     private JdbcTemplate jdbcTemplate;
     @Override
     public Recipe updateFullRecipe(Recipe recipe){
-        return updateRecipe(recipe, id);
+        return updateRecipe(recipe);
     }
 
 
