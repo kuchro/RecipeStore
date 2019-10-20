@@ -14,7 +14,7 @@ public class UpdateRecipeServiceImpl implements UpdateRecipeService {
     private RepositoryUpdateRecipe repositoryUpdateRecipe;
     @Override
     @Transactional
-    public Recipe updateRecipeWithComponents(Recipe recipe, Integer id){
-        return repositoryUpdateRecipe.updateFullRecipe(recipe,id);
+    public Recipe updateRecipeWithComponents(Recipe recipe){
+        return repositoryUpdateRecipe.updateFullRecipe(recipe);
     }
 }
